@@ -161,10 +161,31 @@ person must authenticate with itsme®.
 .. note::
    This feature is only available in Belgium and the Netherlands.
 
+Signatory hash
+==============
+
+A :guilabel:`hash` can be added to a document that is shared (attached to an email or printed, for
+example) to indicate that the signature is electronic and that there is some traceability behind
+it. The :guilabel:`hash` corresponds to a unique ID number related to the signed document.
+
+If you are an :doc:`internal user <../general/users/manage_users>`,
+you can choose to tick or untick the frame option when signing the document. Tick the box to have
+the frame and hash visible.
+
+.. image:: sign/sign-hash.png
+   :align: center
+   :alt: Add a hash to your document
+
+.. note::
+   The :guilabel:`hash` is only applicable to the signature field.
+
 .. _sign/field-types:
 
-Field Types
-===========
+Configuration
+=============
+
+Field types
+-----------
 
 Various field types can be used to sign documents (placeholder, autocompletion, ...). By configuring
 your own field types, also known as signature item types, the signing process can be even faster for
@@ -213,20 +234,31 @@ the field before it is completed.
    :align: center
    :alt: Tip and placeholder example in Odoo Sign
 
-Signatory hash
-==============
+Tags
+----
 
-A :guilabel:`hash` can be added to a document that is shared (attached to an email or printed, for
-example) to indicate that the signature is electronic and that there is some traceability behind
-it. The :guilabel:`hash` corresponds to a unique ID number related to the signed document.
+Tags can be used to categorize and organize documents, and allow users to easily search for and
+filter documents based on specific criteria.
 
-If you are an :doc:`internal user <../general/users/manage_users>`,
-you can choose to tick or untick the frame option when signing the document. Tick the box to have
-the frame and hash visible.
+You can manage tags by going to :menuselection:`Configuration --> Tags`. To create a tag, click
+:guilabel:`New`. A line is created. Add the :guilabel:`tag name` and select a
+:guilabel:`Color Index` for your tag.
 
-.. image:: sign/sign-hash.png
-   :align: center
-   :alt: Add a hash to your document
+To apply a tag to a document, use the dropdown list available in your document.
 
-.. note::
-   The :guilabel:`hash` is only applicable to the signature field.
+Signing order
+-------------
+
+By going to :menuselection:`Configuration --> Settings`, you can :guilabel:`Enable Signing Order` to
+allow users to define a signing order, where recipients are only notified when it is their turn to
+sign.
+
+Expiration and reminders
+------------------------
+
+It is possible to set a **validity date** to your document or to send **automatic email reminders**
+to people who still need to sign a document after a set delay.
+
+From your dashboard, click :guilabel:`Send` on the document you want to send. A page pops up. Go to
+the :guilabel:`Options` tab and to the :guilabel:` Expiration & Reminders` section. From there, fill
+in the :guilabel:`Valid Until` field and decide how often reminders are sent out.
